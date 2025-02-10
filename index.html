@@ -2,12 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>React + Replit + GH Pages</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React + TypeScript + Replit</title>
   </head>
   <body>
     <div id="root"></div>
-   <script type="module" src="/electrical-business-web-3/src/index.jsx"></script>
+
+    <!-- Use a *relative* path so it looks for `src/index.jsx` *within* your repo -->
+    <!-- This assumes `index.html` is at the root of your repository's GH Pages branch
+         and `src/index.jsx` is in a subfolder called "src" at that same level. -->
+    <script type="module" src="./src/index.jsx"></script>
   </body>
 </html>
